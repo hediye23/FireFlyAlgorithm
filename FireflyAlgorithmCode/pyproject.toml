@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "FireflyAlgorithm"
+version = "0.2"
+description = "Firefly algorithm implementation."
+authors = ["firefly-cpp"]
+license = "MIT"
+
+packages = [
+    {include = "FireflyAlgorithm.py"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+numpy = [
+    { version = "^1.21.5", python = ">=3.7,<3.11" },
+    { version = "^1.22.0", python = "^3.11" }
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
